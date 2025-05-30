@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body style="background-image: url('image/bg.jfif');">
+    
+    <div class="container">
+        <!-- Judul Website-->
+        <header style="background-image: url('image/bg2.jfif');">
+            <h1>Website konversi Suhu</h1>
+            <h2 style="background-color: white; font-family: 'Fira Sans', sans-serif;">Ryan Sutan Wijaya</h2>
+        </header>
+
+        <main>
+            <!-- Perintah Input-->
+            <section>
+                <p style="text-align: center;">Konversi suhu dengan cepat dan mudah</p>
+            </section>
+
+            <!-- Inputan Suhu-->
+            <div>
+                <label id="input-suhu" for="suhu">Masukkan Suhu (&deg;C):</label>
+                <input type="number" id="suhu" placeholder="Input nilai suhu">
+            </div>
+
+            <div>
+                <button style="background-color: lightseagreen;">Konversi</button>
+                <button style="background-color: red;">Reset</button>
+                <button style="background-color: blue;">Reverse</button>
+            </div>
+
+            <!-- Hasil Konversi-->
+            <div>
+                <label id="label-hasil" for="hasil-suhu">Fahrenheit (&deg;F):</label>
+                <input style="font-family: Cambria Math;" type="number" id="hasil-suhu" name="hasil-suhu" readonly>
+            </div>
+
+            <!-- Penjelasan Hasil-->
+            <div>
+                <label for="detail-suhu">Penjelasan Kalkulasi:</label>
+                <textarea style="font-family: Cambria Math; height: 150px;" id="detail-suhu" readonly></textarea>
+            </div>
+
+            <section>
+                <h4 style="margin-bottom: 0px; text-align: center;">Rumus Konversi Suhu</h4>
+            </section>
+            <hr/>
+
+            <div class="rumus-container">
+                <div class="rumus-box">
+                    <p><strong>Rumus konversi &deg;C ke &deg;F:</strong></p>
+                    <p style="font-family: Cambria Math;">S(&deg;F) = (S(&deg;C) × 9/5) + 32</p>
+                </div>
+                <div class="rumus-box">
+                    <p><strong>Rumus konversi &deg;F ke &deg;C:</strong></p>
+                    <p style="font-family: Cambria Math;">S(&deg;C) = (S(&deg;F) − 32) × 5/9</p>
+                </div>
+            </div>
+
+            <script src="js\script.js"></script>
+        </main>
+
+    </div>
+    <footer>
+        <div class="float-right d-none d-sm-block">
+                Copyright &copy; Ryan Sutan Wijaya 2025 | All Right Reserved
+        </div>
+    </footer>
+</body>
+</html>
